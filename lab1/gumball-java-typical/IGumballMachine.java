@@ -17,6 +17,7 @@ public interface IGumballMachine
      public void insertDime();  
      public void insertNickel();   
      public void turnCrank();  
+     public void ejectCoin();
      public boolean isGumballInSlot();  
      public void takeGumballFromSlot();
 }

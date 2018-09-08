@@ -14,7 +14,7 @@ public class SoldOutState implements State {
 	}
  
 	public void turnCrank() {
-		System.out.println("You turned, but there are no gumballs");
+		System.out.println("No gumballs available");
 	}
  
 	public void dispense() {

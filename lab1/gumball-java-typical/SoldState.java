@@ -11,30 +11,26 @@ public class SoldState implements State {
     }
  
     public void ejectCoin() {
-        System.out.println("Sorry, We're already giving you coins back.");
+        System.out.println("Sorry, we have already given your money back");
     }
  
     public void turnCrank() {
-        System.out.println("Turning twice doesn't get you another gumball!");
+        System.out.println("Please wait, we're already giving you a gumball");
     }
  
     public void dispense() 
     {
-        ////if(gumballMachine.getCoinTotalValue()>= 50)
-        //{
-            gumballMachine.releaseBall();
+        gumballMachine.releaseBall();
             
-            if(gumballMachine.getCoinTotalAmount()>0)
-            {
-                    
-                System.out.println("Your "+ gumballMachine.getCoinTotalAmount()+ " cents returned.");
+        if(gumballMachine.getCoinTotalAmount()>0) {
+            System.out.println("Your "+ gumballMachine.getCoinTotalAmount()+ " cents returned.");
                 gumballMachine.setCoinTotalAmount(0);    
-            }
-        //}    
+        }
+           
         if (gumballMachine.getCount() > 0) {
             gumballMachine.setState(gumballMachine.getNoCoinsState());
         } else {
-            System.out.println("Oops, out of gumballs!");
+            System.out.println("out of gumballs");
             gumballMachine.setState(gumballMachine.getSoldOutState());
         }
         
