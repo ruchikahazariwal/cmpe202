@@ -8,7 +8,8 @@ The Card Entry Box will display:
 Note: two spaces between CC# and Date and also Date and CVC.
 
 ========================================
-Screen
+Screen 
+
 ========================================
 
 
@@ -24,8 +25,10 @@ Screen
 Key (Digit or X or Delete) => 
 
 Output After Entering all the digits:
+
 ========================================
 Screen
+
 ========================================
 
 
