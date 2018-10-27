@@ -45,7 +45,7 @@ Screen
 
 Key (Digit or X or Delete) => 
 
-# What design pattern(s) would you use to implement the Credit Card Text Entry and Display?
+## What design pattern(s) would you use to implement the Credit Card Text Entry and Display?
 
 
 In app class, CreditCardNum, CreditCardExp and CreditCardCVC have been added as subcomponent of it. In this way, we have implemented Chain of responsibility pattern. Every sub compoment's input is handled by the count of keys entered so far. Whenever count of digits entered form subcomponent reached upper limit, next component inline gets the responsibility to handle the input.
